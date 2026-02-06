@@ -75,15 +75,15 @@ body {
   transition: 0.5s ease;
 }
 
-#yesBtn:hover{
-    box-shadow: 2px 3px 40px black;
+#yesBtn:hover {
+  box-shadow: 2px 3px 40px black;
 }
 
 #noBtn {
   z-index: 1;
   width: 100px;
   height: 40px;
-   border-radius: 15px;
+  border-radius: 15px;
   border: 1.5px solid rgb(69, 68, 68);
   background-color: #ff2644;
   color: whitesmoke;
@@ -91,8 +91,13 @@ body {
   transition: 0.5s ease;
 }
 
-#noBtn:hover{
-    box-shadow: 2px 3px 40px black;
+#noBtn:hover {
+  box-shadow: 2px 3px 40px black;
 }
 
 
+.heart {
+  color: #e05ec8;
+  font-size: 25px;  
+  margin-top: 10px;
+}
