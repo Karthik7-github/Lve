@@ -148,10 +148,11 @@ body {
   background-color: #ff2644;
   color: whitesmoke;
   border-radius: 100px;
+  box-shadow: 2px 2px 30px black;
 }
 
 .thanks .check:active {
-  background-color: #ffc5e6;
+  color: black;
 }
 
 /* letter */
@@ -159,5 +160,20 @@ body {
 .letter {
     width: 100%;
     height: 100vh;
-    background-color: yellow;
+    background-color: #ff257e;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    display: none;
 }
+
+.letter .active{
+    display: flex;
+}
+
+.letter img{
+    width: 100%;
+    height: 100%;
+    filter: blur(4px);
+}
+

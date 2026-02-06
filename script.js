@@ -16,3 +16,9 @@ yesBtn.addEventListener("click", () => {
   thanks.classList.add("active");   // show next card
 });
 
+const letter = document.querySelector('.letter');
+const check = document.querySelector('.check');
+
+check.addEventListener("click",()=>{
+    letter.style.display="flex";
+})
