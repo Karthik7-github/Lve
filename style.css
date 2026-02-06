@@ -1,31 +1,98 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    color: black;
-    background-color: pink;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+body {
+  color: black;
+  background-color: pink;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
-.Mainpage{
-    width: 100%;
-    height: 100vh;
-    background-color: yellow;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.Mainpage {
+  width: 100%;
+  height: 100vh;
+  background-color: #ff257e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.Mainpage .navbar{
-    width: 40%;
-    height: 10vh;
-    background-color: blue;
-    margin-left: 600px;
-    
+.Mainpage .navbar {
+  width: 50%;
+  height: 50vh;
+  background-color: #ffc5e6;
+  border-radius: 10px;
+  border: 1.5px solid black;
+  box-shadow: 2px 2px 10px black;
+  transition: 0.5s ease;
 }
+
+.Mainpage .navbar:hover {
+  box-shadow: 2px 2px 50px black;
+}
+
+.Mainpage .navbar .texts {
+  width: 100%;
+  height: 20vh;
+  /* background-color: red; */
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  text-shadow: 2px 2px 10px #e54e8a;
+  margin-top: 30px;
+}
+
+.buttons {
+  position: relative;
+  width: 300px;
+  height: 60px;
+}
+
+.Mainpage .navbar .buttons {
+  width: 100%;
+  height: 20vh;
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#yesBtn {
+  z-index: 2;
+  width: 100px;
+  height: 40px;
+  margin: 30px;
+  border-radius: 15px;
+  border: 1.5px solid rgb(69, 68, 68);
+  background-color: #ff2644;
+  color: whitesmoke;
+  font-weight: 500;
+  transition: 0.5s ease;
+}
+
+#yesBtn:hover{
+    box-shadow: 2px 3px 40px black;
+}
+
+#noBtn {
+  z-index: 1;
+  width: 100px;
+  height: 40px;
+   border-radius: 15px;
+  border: 1.5px solid rgb(69, 68, 68);
+  background-color: #ff2644;
+  color: whitesmoke;
+  font-weight: 500;
+  transition: 0.5s ease;
+}
+
+#noBtn:hover{
+    box-shadow: 2px 3px 40px black;
+}
+
 
