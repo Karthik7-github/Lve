@@ -7,6 +7,7 @@
 body {
   color: black;
   background-color: pink;
+  overflow: hidden;
 }
 
 .Mainpage {
