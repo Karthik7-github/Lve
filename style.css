@@ -74,15 +74,18 @@ body {
   height: 40px;
   /* margin: 30px; */
   border-radius: 15px;
-  border: 1.5px solid rgb(69, 68, 68);
-  background-color: #ff2644;
-  color: whitesmoke;
+  border: 2px solid wheat;
+  background-color: #ff257e;
+  color: wheat;
   font-weight: 500;
   transition: 0.5s ease;
+  font-size: 16px;
 }
 
 #yesBtn:hover {
-  box-shadow: 2px 3px 40px black;
+  box-shadow: 2px 3px 60px black;
+  background-color: rgb(84, 211, 84);
+  color: black;
 }
 
 #noBtn {
@@ -90,15 +93,24 @@ body {
   width: 100px;
   height: 40px;
   border-radius: 15px;
-  border: 1.5px solid rgb(69, 68, 68);
-  background-color: #ff2644;
-  color: whitesmoke;
+  border: 2px solid wheat;
+  background-color: #ff257e;
+  color: wheat;
   font-weight: 500;
   transition: 0.5s ease;
+  font-size: 16px;
 }
 
 #noBtn:hover {
-  box-shadow: 2px 3px 40px black;
+  box-shadow: 2px 3px 60px black;
+  background-color: rgb(255, 4, 4);
+  color: black;
+}
+
+.Mainpage .navbar .sty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .heart {
@@ -137,16 +149,18 @@ body {
   height: 8vh;
   margin-top: 40px;
   border-radius: 10px;
-  border: 1px solid transparent;
+  border: 2px solid wheat;
   transition: 0.3s ease;
   font-size: 16px;
   font-weight: 500;
+  background-color: black;
+  color: #ff257e;
 }
 
 .thanks .check:hover {
   border: 2px solid black;
-  background-color: #ff2644;
-  color: whitesmoke;
+  background-color: #ff257e;
+  color: black;
   border-radius: 100px;
   box-shadow: 2px 2px 30px black;
 }
@@ -158,22 +172,206 @@ body {
 /* letter */
 
 .letter {
-    width: 100%;
-    height: 100vh;
-    background-color: #ff257e;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    display: none;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
-.letter .active{
-    display: flex;
+.letter.active {
+  display: flex;
 }
 
-.letter img{
-    width: 100%;
-    height: 100%;
-    filter: blur(4px);
+.letter::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("images/WhatsApp\ Image\ 2026-02-06\ at\ 10.07.33\ PM.jpeg");
+  background-size: 100% 100%;
+  filter: blur(3px);
+  z-index: 1;
 }
+
+.letter .seeurmemories {
+  width: 170px;
+  height: 50px;
+  background-color: #ff2644;
+  z-index: 2;
+  position: relative;
+  border-radius: 8px;
+  cursor: pointer;
+  color: wheat;
+  font-size: 16px;
+  border: 2px solid white;
+  padding: 5px;
+  transition: 0.4s ease;
+}
+
+.letter .seeurmemories:hover {
+  box-shadow: 4px 4px 90px black;
+  background-color: red;
+  border: 2px solid black;
+  color: whitesmoke;
+}
+
+/*   Memories  */
+
+.memories {
+  width: 100%;
+  height: 200vh;
+  background-color: #ff257e;
+  display: none;
+}
+
+.memories.active {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.memories .headmem {
+  margin-top: 20px;
+}
+
+.memories .pics {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.memories .pics .images {
+  width: 22%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.image1 {
+  background-image: url("images/WhatsApp\ Image\ 2026-02-06\ at\ 10.05.33\ PM.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.image2 {
+  background-image: url("images//WhatsApp\ Image\ 2026-02-06\ at\ 10.05.35\ PM.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.image3 {
+  background-image: url("images/WhatsApp\ Image\ 2026-02-07\ at\ 3.36.02\ PM.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.image4 {
+  background-image: url("images/WhatsApp\ Image\ 2026-02-07\ at\ 11.30.38\ AM\ \(1\).jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.image5 {
+  background-image: url("images/WhatsApp\ Image\ 2026-02-07\ at\ 11.30.37\ AM\ \(1\).jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.image6 {
+  background-image: url("images/WhatsApp\ Image\ 2026-02-06\ at\ 10.05.34\ PM\ \(1\).jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.image7 {
+  background-image: url("images/WhatsApp\ Image\ 2026-02-06\ at\ 10.19.40\ PM\ \(1\).jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.image8 {
+  background-image: url("images/WhatsApp\ Image\ 2026-02-07\ at\ 3.31.08\ PM.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.memories .pics .images {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+
+.images:hover {
+  box-shadow: 2px 2px 40px wheat;
+}
+
+/* Dark overlay */
+.memories .pics .images .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.4s ease;
+  flex-direction: column;
+}
+
+/* Text */
+.memories .pics .images .overlay span {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transform: translateY(15px);
+  transition: 0.4s ease;
+  color: wheat;
+}
+
+/* Hover effect */
+.memories .pics .images:hover .overlay {
+  opacity: 1;
+}
+
+.memories .pics .images:hover .overlay span {
+  transform: translateY(0);
+}
+
+.memories .pics .images {
+  background-size: 100%;
+  transition: background-size 0.4s ease;
+}
+
+.memories .pics .images:hover {
+  background-size: 110%;
+}
+
+.memories .date-btn button {
+  width: 100px;
+  height: 40px;
+  border: 2px solid black;
+  transition: 0.3s ease;
+}
+
+.memories .date-btn button:hover {
+  width: 120px;
+  height: 50px;
+  font-size: 16px;
+  box-shadow: black;
+  background-color: wheat;
+  box-shadow: 2px 2px 40px wheat;
+}
+
+/* Dates  */
 

@@ -22,3 +22,19 @@ const check = document.querySelector('.check');
 check.addEventListener("click",()=>{
     letter.style.display="flex";
 })
+
+// const seeurmem = document.querySelector('.seeurmemories');
+// const memroies = document.querySelector('.')
+
+// memroies.addEventListener("click",()=>{
+//     seeurmem.classList.add('active');
+// })
+
+const seeurmem = document.querySelector('.seeurmemories');
+const memories = document.querySelector('.memories');
+// const letter = document.querySelector('.letter');
+
+seeurmem.addEventListener("click", () => {
+    
+    memories.classList.add('active');
+});
