@@ -7,7 +7,6 @@
 body {
   color: black;
   background-color: pink;
-  
 }
 
 .Mainpage {
@@ -116,7 +115,7 @@ body {
 }
 
 .heart {
-  color: #ff0037;;
+  color: #ff0037;
   font-size: 25px;
   margin-top: 10px;
 }
@@ -381,9 +380,14 @@ body {
   width: 100%;
   height: 100vh;
   background-color: #ff257e;
-  display: flex;
+  /* display: flex; */
+  display: none;
   align-items: center;
   justify-content: center;
+}
+
+.dates.active{
+  display: flex;
 }
 
 .dates .date-text {
@@ -417,3 +421,20 @@ body {
   border-radius: 30px;
   border: 1px solid transparent;
 }
+
+.dates .date-text .play-quiz-btn {
+  width: 100px;
+  height: 40px;
+  font-size: medium;
+  font-weight: 600;
+  background-color: rgb(249, 206, 127);
+}
+
+/*   Quiz   */
+
+.quiz{
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+}
+

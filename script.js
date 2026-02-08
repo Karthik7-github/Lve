@@ -38,3 +38,11 @@ seeurmem.addEventListener("click", () => {
     
     memories.classList.add('active');
 });
+
+
+const dates = document.querySelector('.dates');
+const showdate = document.querySelector('.show-date');
+
+showdate.addEventListener("click",()=>{
+    dates.classList.add('active');
+})
