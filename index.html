@@ -25,18 +25,6 @@
           <i class="fa-solid fa-heart heart"></i>
           <i class="fa-solid fa-heart heart"></i>
           <i class="fa-solid fa-heart heart"></i>
-          <i class="fa-solid fa-heart heart"></i>
-          <i class="fa-solid fa-heart heart"></i>
-          <i class="fa-solid fa-heart heart"></i>
-          <i class="fa-solid fa-heart heart"></i>
-          <i class="fa-solid fa-heart heart"></i>
-          <i class="fa-solid fa-heart heart"></i>
-          <i class="fa-solid fa-heart heart"></i>
-          <i class="fa-solid fa-heart heart"></i>
-          <i class="fa-solid fa-heart heart"></i>
-          <i class="fa-solid fa-heart heart"></i>
-          <i class="fa-solid fa-heart heart"></i>
-          <i class="fa-solid fa-heart heart"></i>
         </div>
         <div class="texts">
           <h1>𝑯𝒂𝒑𝒑𝒚 𝑽𝒂𝒍𝒆𝒏𝒕𝒊𝒏𝒆'𝒔 𝑫𝒂𝒚</h1>
@@ -145,9 +133,8 @@
 </div>
     </section>
     <section class="quiz" id="quiz-time">
-
   <div class="start-screen">
-    <button id="start-button">Start</button>
+    <button id="start-button" >Start</button>
   </div>
 
   <div id="display-container" class="hide">
@@ -163,15 +150,21 @@
 
     <div id="container"></div>
 
-    <button id="next-button">Next</button>
+    <button id="next-button" style="border: 1.5px solid black; background-color:#ff257e;">Next</button>
   </div>
-
   <div class="score-container hide">
-    <div id="user-score">Demo Score</div>
-    <!-- <button id="restart">Restart</button> -->
-  </div>
-</section>
+  <p id="user-score"></p>
+  <a href="#your-wishes" style="text-decoration: none;"><button class="wishbutton" id="next-page-btn" style="display:none; border-radius: 5px; width: 200px; height: 40px; margin-top: 40px;" onclick="wishbtn()">
+    Okay Now Make Your Wishes
+  </button></a>
+ 
+</div>
+    </section>
+    <section id="your-wishes" class="wishes">
+      
+    </section> 
     <script src="script.js"></script>
     <script src="MCQ Quiz App/script.js" defer></script>
   </body>
 </html>
+

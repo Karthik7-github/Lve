@@ -23,13 +23,6 @@ check.addEventListener("click",()=>{
     letter.style.display="flex";
 })
 
-// const seeurmem = document.querySelector('.seeurmemories');
-// const memroies = document.querySelector('.')
-
-// memroies.addEventListener("click",()=>{
-//     seeurmem.classList.add('active');
-// })
-
 const seeurmem = document.querySelector('.seeurmemories');
 const memories = document.querySelector('.memories');
 // const letter = document.querySelector('.letter');
@@ -49,5 +42,14 @@ showdate.addEventListener("click",()=>{
 
 document.querySelector('.play-quiz-btn').addEventListener('click', () => {
   document.querySelector('.quiz').classList.add('active');
+  document.querySelector('.quiz').classList.remove('hide')
+});
+
+const wishes = document.querySelector('.wishes');
+const wishbtn = document.querySelector('.wishbutton');
+
+wishbtn.addEventListener("click", () => {
+  document.querySelector('.quiz').classList.add('hide');
+  wishes.classList.add('active');       // show wishes
 });
 

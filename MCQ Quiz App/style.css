@@ -5,7 +5,7 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  background-color: #0a69ed;
+  background-color: red;
 }
 .start-screen,
 .score-container {
@@ -109,4 +109,8 @@ button {
 
 #restart {
   display: none;
+}
+
+.quix.hide{
+  display:none;
 }

@@ -428,6 +428,13 @@ body {
   font-size: medium;
   font-weight: 600;
   background-color: rgb(249, 206, 127);
+  transition: 0.4s ease;
+  border-radius: 3px;
+  border: 1px solid black;
+}
+
+.dates .date-text .play-quiz-btn:hover{
+  box-shadow: 2px 2px 60px black;
 }
 
 /*   Quiz   */
@@ -441,23 +448,49 @@ body {
 /*  Changed */
 
 .quiz {
-  background-color: #0a69ed;
+  background-color: #ff257e;
   min-height: 100vh;
   position: relative;
 }
 
 .quiz {
   display: none;
+  /*none*/
 }
 
 .quiz.active {
   display: block;
 }
 
-
 .start-screen,
 .score-container {
   position: absolute;
   inset: 0;
+}
+
+.wishbutton{
+  box-shadow: 2px 2px 30px black;
+  transition: 0.3s ease;
+}
+
+.wishbutton:hover{
+  border-radius: 10px;
+  box-shadow: 4px 4px 100px black;
+}
+/*  Wishes */
+
+.wishes {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background-color: #ff257e;
+}
+
+.wishes.active{
+  display: flex;
+}
+
+.quiz.hide {
+  display: none;
 }
 
