@@ -46,3 +46,8 @@ const showdate = document.querySelector('.show-date');
 showdate.addEventListener("click",()=>{
     dates.classList.add('active');
 })
+
+document.querySelector('.play-quiz-btn').addEventListener('click', () => {
+  document.querySelector('.quiz').classList.add('active');
+});
+
