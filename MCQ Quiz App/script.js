@@ -230,6 +230,8 @@
 
 
 // ================= REFERENCES =================
+document.addEventListener("DOMContentLoaded", () => {
+
 let timeLeft = document.querySelector(".time-left");
 let quizContainer = document.getElementById("container");
 let nextQuestionBtn = document.getElementById("next-button");
@@ -431,3 +433,5 @@ startButton.addEventListener("click", () => {
   displayContainer.classList.remove("hide");
   initial();
 });
+
+  });

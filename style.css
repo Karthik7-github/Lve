@@ -386,7 +386,7 @@ body {
   justify-content: center;
 }
 
-.dates.active{
+.dates.active {
   display: flex;
 }
 
@@ -433,33 +433,29 @@ body {
   border: 1px solid black;
 }
 
-.dates .date-text .play-quiz-btn:hover{
+.dates .date-text .play-quiz-btn:hover {
   box-shadow: 2px 2px 60px black;
 }
 
 /*   Quiz   */
 
-.quiz{
+.quiz {
   width: 100%;
   height: 100vh;
   background-color: #fff;
-}
-
-/*  Changed */
-
-.quiz {
   background-color: #ff257e;
   min-height: 100vh;
   position: relative;
-}
-
-.quiz {
   display: none;
-  /*none*/
 }
 
+/*  Changed */
 .quiz.active {
   display: block;
+}
+
+.quiz.hide {
+  display: none;
 }
 
 .start-screen,
@@ -468,17 +464,17 @@ body {
   inset: 0;
 }
 
-.wishbutton{
+.wishbutton {
   box-shadow: 2px 2px 30px black;
   transition: 0.3s ease;
 }
 
-.wishbutton:hover{
+.wishbutton:hover {
   border-radius: 10px;
   box-shadow: 4px 4px 100px black;
 }
-/*  Wishes */
 
+/*  Wishes */
 .wishes {
   display: none;
   width: 100%;
@@ -486,11 +482,11 @@ body {
   background-color: #ff257e;
 }
 
-.wishes.active{
+.wishes.active {
   display: flex;
 }
 
-.quiz.hide {
-  display: none;
-}
 
+.hide {
+  display: none !important;
+}
