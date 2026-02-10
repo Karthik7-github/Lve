@@ -53,3 +53,58 @@ wishbtn.addEventListener("click", () => {
   wishes.classList.add('active');       // show wishes
 });
 
+// change
+
+let container = document.querySelector(".container");
+let btn = document.getElementById("spin");
+let resultsBox = document.getElementById("results");
+
+let rotation = 0;
+let turn = 0;
+const maxTurns = 3;
+
+// wishes list (shrinks after each spin)
+let messages = [
+  "You owe me a chocolate 🍫",
+  "Movie date confirmed 🎬",
+  "Hug me tight 🤗",
+  "You are mine ❤️",
+  "Coffee date ☕",
+  "Surprise gift 🎁",
+  "Kiss please 😘",
+  "Forever together 💍"
+];
+
+btn.onclick = function () {
+
+  if (turn >= maxTurns) return;
+
+  turn++;
+
+  let randomSpin = Math.floor(Math.random() * 360) + 720;
+  rotation += randomSpin;
+  container.style.transform = `rotate(${rotation}deg)`;
+
+  setTimeout(() => {
+
+    // pick random wish index
+    let index = Math.floor(Math.random() * messages.length);
+    let selectedWish = messages[index];
+
+    // remove selected wish (NO REPEAT)
+    messages.splice(index, 1);
+
+    let div = document.createElement("div");
+    div.className = "result-item";
+    div.innerText = `Turn ${turn}: ${selectedWish}`;
+
+    resultsBox.appendChild(div);
+
+    if (turn === maxTurns) {
+      btn.innerText = "Done";
+      btn.style.cursor = "not-allowed";
+      btn.style.opacity = "0.6";
+    }
+
+  }, 5000);
+};
