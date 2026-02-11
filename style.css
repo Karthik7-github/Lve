@@ -175,9 +175,10 @@ body {
 .letter {
   width: 100%;
   height: 100vh;
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   position: relative;
   z-index: 1;
 }
@@ -186,20 +187,26 @@ body {
   display: flex;
 }
 
+.letter .mainletter{
+  width: 100%;
+  height: 80vh;
+  background-image: url('images/Untitled\ design\ \(1\).png');
+}
+
 .letter::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("images/WhatsApp\ Image\ 2026-02-07\ at\ 9.12.28\ PM\ \(1\).jpeg");
+  background-image: url("images/Untitled\ design\ \(1\).png"); 
   background-size: 100% 100%;
-  filter: blur(3px);
+  filter: blur(1px);
   z-index: 1;
 }
 
 .letter .seeurmemories {
   width: 170px;
   height: 50px;
-  background-color: #ff2644;
+  background-color: gray;
   z-index: 2;
   position: relative;
   border-radius: 8px;
@@ -213,8 +220,6 @@ body {
 
 .letter .seeurmemories:hover {
   box-shadow: 4px 4px 90px black;
-  background-color: red;
-  border: 2px solid black;
   color: whitesmoke;
 }
 
@@ -513,6 +518,7 @@ body {
 	position: relative;
 	overflow: hidden;
 	transition: transform 5s ease-in-out;
+  transform-origin: 50% 50%;
 }
 
 .container {
@@ -611,9 +617,13 @@ body {
 }
 
 .spin-section{
-  display: flex;
+  display: none;
   min-height: 100vh;
-  background-color: #ff2b85;
+  background-color: #ff257e;
+}
+
+.spin-section.active{
+  display: flex;
 }
 
 .spin-left{
@@ -668,3 +678,10 @@ body {
   to{opacity:1; transform:translateY(0);}
 }
 
+/* her */
+
+.her{
+  width: 100%;
+  height: 100vh;
+  background-color: #ff257e;
+}

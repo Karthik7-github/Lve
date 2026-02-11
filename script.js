@@ -45,11 +45,11 @@ document.querySelector('.play-quiz-btn').addEventListener('click', () => {
   document.querySelector('.quiz').classList.remove('hide');
 });
 
-const wishes = document.querySelector('.wishes');
+const wishes = document.querySelector('.spin-section');
 const wishbtn = document.querySelector('.wishbutton');
 
 wishbtn.addEventListener("click", () => {
-  document.querySelector('.quiz').classList.add('hide');
+  //document.querySelector('.quiz').classList.add('hide');
   wishes.classList.add('active');       // show wishes
 });
 
@@ -108,3 +108,4 @@ btn.onclick = function () {
 
   }, 5000);
 };
+
