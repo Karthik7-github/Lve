@@ -109,3 +109,9 @@ btn.onclick = function () {
   }, 5000);
 };
 
+const herbtn = document.querySelector('.herbtn');
+const her = document.querySelector('.her');
+
+herbtn.addEventListener("click",()=>{
+  her.classList.add('active');
+})
