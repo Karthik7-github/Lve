@@ -72,8 +72,8 @@ let messages = [
   "Shopping Together",
   "Go Kartikng ",
   "Beach Date 😘",
-  "Shawarma date (Food Date)",
-  "OYO"
+  "Food Date",
+  "Spending Time with you"
 ];
 
 btn.onclick = function () {
