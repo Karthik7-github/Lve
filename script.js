@@ -65,14 +65,15 @@ const maxTurns = 3;
 
 // wishes list (shrinks after each spin)
 let messages = [
-  "You owe me a chocolate 🍫",
-  "Movie date confirmed 🎬",
-  "Hug me tight 🤗",
-  "You are mine ❤️",
-  "Coffee date ☕",
-  "Surprise gift 🎁",
-  "Kiss please 😘",
-  "Forever together 💍"
+  "Trampoline Date",
+  "Movie date 🎬",
+  "Temple Visit ",
+  "Trecking Togther❤️",
+  "Shopping Together",
+  "Go Kartikng ",
+  "Beach Date 😘",
+  "Shawarma date (Food Date)",
+  "OYO"
 ];
 
 btn.onclick = function () {
@@ -115,3 +116,17 @@ const her = document.querySelector('.her');
 herbtn.addEventListener("click",()=>{
   her.classList.add('active');
 })
+
+
+  const section = document.querySelector(".up");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        section.classList.add("show");
+      }
+    });
+  }, { threshold: 0.5 });
+
+  observer.observe(section);
+

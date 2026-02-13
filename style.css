@@ -710,18 +710,94 @@ body {
 }
 
 /* her */
-
-.her {
-  width: 100%;
-  height: 100vh;
-  background-color:#ff257e;
-  display: flex;/* none*/
-  background-image: url('images/WhatsApp\ Image\ 2026-02-12\ at\ 7.24.22\ PM.jpeg');
-  background-position: center;
-  background-size: cover;
-  filter: blur(5px);
-}
-
 .her.active{
   display: flex;
+} 
+
+.her {
+  position: relative;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 0 5%;
+  overflow: hidden;
 }
+
+
+.her::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('images/WhatsApp\ Image\ 2026-02-07\ at\ 9.12.28\ PM\ \(1\).jpeg');
+  background-position: center left;
+  background-size: cover;
+  filter: blur(2px);
+  transform: scale(1.1); /* prevents edge cutting after blur */
+  z-index: -1;
+}
+
+
+.rightside {
+  width: 50%;
+  min-height: 500px;
+   
+  color: white; 
+  padding: 20px;
+  border-radius: 10px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rightside .up{
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #f309e3;
+}
+
+.rightside .down{
+  width: 70%;
+  height: 40vh;
+  background-position: center;
+  background-size: cover;
+  background-image:url('images/promise.gif') ;
+}
+
+.leftside{
+  width: 40%;
+  min-height: 300px;
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent */
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  background-image: url('images/WhatsApp\ Image\ 2026-02-12\ at\ 7.25.41\ PM.jpeg');
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+}
+
+.up h2 {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+/* When active */
+.up.show h2 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Delay each line */
+.up.show h2:nth-child(1) { transition-delay: 0.2s; }
+.up.show h2:nth-child(2) { transition-delay: 0.6s; }
+.up.show h2:nth-child(3) { transition-delay: 1s; }
+.up.show h2:nth-child(4) { transition-delay: 1.4s; }
+.up.show h2:nth-child(5) { transition-delay: 1.8s; }
